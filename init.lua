@@ -201,6 +201,9 @@ dofile(minetest.get_modpath("farming").."/wheat.lua")
 -- ========= COTTON =========
 dofile(minetest.get_modpath("farming").."/cotton.lua")
 
+-- ========= PUMPKIN =========
+dofile(minetest.get_modpath("farming").."/pumpkin.lua")
+
 -- ========= WEED =========
 dofile(minetest.get_modpath("farming").."/weed.lua")
 
