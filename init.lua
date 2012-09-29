@@ -134,12 +134,6 @@ farming.seeds = {
 	["farming:wheat_seed"]=20,
 	["farming:cotton_seed"]=30,
 	["farming:pumpkin_seed"]=60,
-	["farming:strawberry_seed"]=30,
-	["farming:rhubarb_seed"]=30,
-	["farming:potatoe_seed"]=30,
-	["farming:tomato_seed"]=30,
-	["farming:orange_seed"]=30,
-	["farming:carrot_seed"]=30,
 }
 
 -- ========= ALIASES FOR FARMING MOD BY SAPIER =========
