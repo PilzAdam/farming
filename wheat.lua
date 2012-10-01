@@ -14,6 +14,7 @@ minetest.register_craftitem("farming:wheat_seed", {
 
 minetest.register_node("farming:wheat_1", {
 	paramtype = "light",
+	sunlight_propagates = true,
 	walkable = false,
 	drawtype = "plantlike",
 	drop = "",
@@ -30,6 +31,7 @@ minetest.register_node("farming:wheat_1", {
 
 minetest.register_node("farming:wheat_2", {
 	paramtype = "light",
+	sunlight_propagates = true,
 	walkable = false,
 	drawtype = "plantlike",
 	drop = "",
@@ -46,6 +48,7 @@ minetest.register_node("farming:wheat_2", {
 
 minetest.register_node("farming:wheat_3", {
 	paramtype = "light",
+	sunlight_propagates = true,
 	walkable = false,
 	drawtype = "plantlike",
 	drop = "",
@@ -62,6 +65,7 @@ minetest.register_node("farming:wheat_3", {
 
 minetest.register_node("farming:wheat", {
 	paramtype = "light",
+	sunlight_propagates = true,
 	walkable = false,
 	drawtype = "plantlike",
 	tiles = {"farming_wheat.png"},
