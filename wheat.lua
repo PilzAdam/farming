@@ -30,8 +30,8 @@ minetest.register_node("farming:wheat_1", {
 })
 
 minetest.register_node("farming:wheat_2", {
-	paramtype = "light",
 	sunlight_propagates = true,
+	paramtype = "light",
 	walkable = false,
 	drawtype = "plantlike",
 	drop = "",
@@ -47,8 +47,8 @@ minetest.register_node("farming:wheat_2", {
 })
 
 minetest.register_node("farming:wheat_3", {
-	paramtype = "light",
 	sunlight_propagates = true,
+	paramtype = "light",
 	walkable = false,
 	drawtype = "plantlike",
 	drop = "",
@@ -64,8 +64,8 @@ minetest.register_node("farming:wheat_3", {
 })
 
 minetest.register_node("farming:wheat", {
-	paramtype = "light",
 	sunlight_propagates = true,
+	paramtype = "light",
 	walkable = false,
 	drawtype = "plantlike",
 	tiles = {"farming_wheat.png"},
@@ -102,21 +102,23 @@ minetest.register_craftitem("farming:flour", {
 })
 
 minetest.register_craft({
-	output = "farming:cake_mix",
+	output = "farming:dough",
 	type = "shapeless",
 	recipe = {"farming:flour", "farming:flour", "farming:flour", "farming:flour", "bucket:bucket_water"},
 	replacements = {{"bucket:bucket_water", "bucket:bucket_empty"}}
 })
 
-minetest.register_craftitem("farming:cake_mix", {
-	description = "Cake Mix",
+minetest.register_alias("farming:cake_mix","farming:dough")
+
+minetest.register_craftitem("farming:dough", {
+	description = "Bread Dough",
 	inventory_image = "farming_cake_mix.png",
 })
 
 minetest.register_craft({
 	type = "cooking",
 	output = "farming:bread",
-	recipe = "farming:cake_mix",
+	recipe = "farming:dough",
 	cooktime = 10
 })
 
@@ -124,6 +126,7 @@ minetest.register_craftitem("farming:bread", {
 	description = "Bread",
 	inventory_image = "farming_bread.png",
 	stack_max = 1,
+	groups = {food=2},
 	on_use = minetest.item_eat(10)
 })
 
